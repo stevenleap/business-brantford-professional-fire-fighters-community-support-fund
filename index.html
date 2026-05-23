@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Brantford Professional Fire Fighters Community Support Fund</title>
+<meta content="Brantford Professional Fire Fighters Community Support Fund – standing with our community, one call at a time. Serving Brantford, ON." name="description"/>
+<meta content="Brantford Professional Fire Fighters Community Support Fund" property="og:title"/>
+<meta content="Supporting our neighbours through programs, volunteerism, and community partnerships." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://images.pexels.com/photos/21838999/pexels-photo-21838999.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Brantford Professional Fire Fighters Community Support Fund" name="twitter:title"/>
+<meta content="Supporting our neighbours through programs, volunteerism, and community partnerships." name="twitter:description"/>
+<meta content="https://images.pexels.com/photos/21838999/pexels-photo-21838999.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" name="twitter:image"/>
+<style>
+    :root {
+      --primary: #C62828;
+      --secondary: #FF8F00;
+      --accent: #FFD54F;
+      --text: #212121;
+      --background: #F5F5F5;
+      --muted: #E0E0E0;
+      --heading-font: 'Oswald', sans-serif;
+      --body-font: 'Roboto', sans-serif;
+      --shield-badge: #2c2c2c;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--body-font);
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+    h1,h2,h3,h4 {
+      font-family: var(--heading-font);
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; display: block; height: auto; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.25rem; }
+
+    
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(33,33,33,0.92);
+      backdrop-filter: blur(4px);
+      padding: 0.65rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--secondary);
+    }
+    .site-header .org-name {
+      font-family: var(--heading-font);
+      font-size: 1rem;
+      color: #f0f0f0;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      line-height: 1.2;
+      max-width: 80%;
+    }
+    .site-header .org-name span { color: var(--accent); }
+
+    
+    .proof-strip {
+      background: #1e1e1e;
+      color: #ccc;
+      font-size: 0.85rem;
+      padding: 0.6rem 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #3a3a3a;
+    }
+    .proof-strip a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .proof-strip .city-badge {
+      background: var(--primary);
+      color: white;
+      padding: 0.15rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      background: #1a1a1a;
+    }
+    .hero-inner {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
+    @media (min-width: 768px) {
+      .hero-inner {
+        flex-direction: row;
+      }
+    }
+    .hero-left {
+      flex: 1 1 50%;
+      background: #1e1e1e;
+      position: relative;
+      overflow: hidden;
+      min-height: 40vh;
+    }
+    .hero-left .shield-bg {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 40%, rgba(198,40,40,0.25) 0%, transparent 70%),
+                  url('https://images.pexels.com/photos/21838999/pexels-photo-21838999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center 30% / cover no-repeat;
+      opacity: 0.6;
+      mix-blend-mode: luminosity;
+    }
+    .hero-left .shield-overlay {
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(45deg, rgba(0,0,0,0.08) 0px, rgba(0,0,0,0.08) 2px, transparent 2px, transparent 6px);
+    }
+    .hero-left .shield-symbol {
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      width: 40%;
+      opacity: 0.2;
+      filter: drop-shadow(0 0 12px rgba(255,143,0,0.3));
+    }
+    .hero-left .shield-symbol svg { width: 100%; height: auto; fill: none; stroke: var(--secondary); stroke-width: 2; }
+    .hero-right {
+      flex: 1 1 50%;
+      background: linear-gradient(145deg, #b71c1c 0%, #e65100 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      color: white;
+      position: relative;
+    }
+    .hero-right::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 4px, transparent 4px, transparent 12px);
+      pointer-events: none;
+    }
+    .hero-right h1 {
+      font-size: clamp(2.2rem, 8vw, 4rem);
+      line-height: 1.1;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      max-width: 800px;
+    }
+    .hero-right .sub {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      font-weight: 300;
+      opacity: 0.9;
+      max-width: 600px;
+    }
+    .hero-actions {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.8rem;
+      font-family: var(--heading-font);
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border: 2px solid white;
+      color: white;
+      background: transparent;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: white;
+      color: var(--primary);
+      border-color: white;
+    }
+    .btn-primary:hover { background: var(--accent); border-color: var(--accent); color: #1a1a1a; }
+    .btn-outline:hover { background: rgba(255,255,255,0.15); }
+
+    
+    section { padding: 4rem 0; }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      border-left: 6px solid var(--primary);
+      padding-left: 1rem;
+      letter-spacing: 0.04em;
+    }
+
+    
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    @media (min-width: 768px) {
+      .about-grid { grid-template-columns: 1.2fr 0.8fr; }
+    }
+    .about-image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      box-shadow: 0 20px 40px -12px rgba(0,0,0,0.3);
+    }
+    .about-image img { width: 100%; height: 100%; object-fit: cover; min-height: 260px; }
+    .about-text p {
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+      background: rgba(255,255,255,0.7);
+      padding: 1.2rem;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+
+    
+    .programs-stagger {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    @media (min-width: 640px) {
+      .programs-stagger {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 1.5rem;
+      }
+    }
+    .program-card {
+      background: white;
+      padding: 1.8rem 1.5rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      border-left: 6px solid var(--secondary);
+      transform: rotate(-0.5deg);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border-radius: 0 8px 8px 0;
+    }
+    .program-card:nth-child(2) { transform: rotate(0.8deg); border-left-color: var(--primary); }
+    .program-card:nth-child(3) { transform: rotate(-0.3deg); border-left-color: var(--accent); }
+    .program-card:hover { transform: rotate(0deg) scale(1.01); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
+    .program-card h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    .program-card p { font-size: 0.95rem; color: #3e3e3e; }
+
+    
+    .why-scroll {
+      background: #2c2c2c;
+      background-image: radial-gradient(circle at 20% 30%, #3a3a3a 0%, #1e1e1e 90%);
+      padding: 3rem 0;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      display: flex;
+      gap: 2rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      scrollbar-width: thin;
+    }
+    .why-scroll::-webkit-scrollbar { height: 6px; background: #444; }
+    .why-scroll::-webkit-scrollbar-thumb { background: var(--secondary); border-radius: 10px; }
+    .why-item {
+      scroll-snap-align: start;
+      min-width: 240px;
+      max-width: 280px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(2px);
+      padding: 1.8rem 1.5rem;
+      border-left: 4px solid var(--accent);
+      color: #eee;
+      flex-shrink: 0;
+      border-radius: 0 12px 12px 0;
+    }
+    .why-item .icon { font-size: 2rem; margin-bottom: 0.5rem; color: var(--accent); }
+    .why-item h4 { font-size: 1.1rem; margin-bottom: 0.3rem; color: white; }
+    .why-item p { font-size: 0.9rem; opacity: 0.85; }
+
+    
+    .map-section {
+      position: relative;
+      background: #ddd;
+      min-height: 300px;
+    }
+    .map-section iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      filter: grayscale(0.6) contrast(1.1);
+    }
+    .map-overlay {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      background: rgba(0,0,0,0.75);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 40px;
+      backdrop-filter: blur(4px);
+      font-size: 0.9rem;
+      border-left: 6px solid var(--secondary);
+      max-width: 90%;
+    }
+    .map-overlay strong { color: var(--accent); }
+
+    
+    .cta-shield {
+      background: #1e1e1e;
+      position: relative;
+      padding: 5rem 1.25rem;
+      text-align: center;
+      overflow: hidden;
+    }
+    .cta-shield::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 120%;
+      height: 120%;
+      transform: translate(-50%,-50%);
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 10 L90 30 L90 60 Q90 80 50 95 Q10 80 10 60 L10 30 Z" fill="none" stroke="%23FF8F00" stroke-width="0.8" opacity="0.15"/></svg>') center/contain no-repeat;
+      pointer-events: none;
+    }
+    .cta-shield h2 { color: white; font-size: 2.5rem; }
+    .cta-shield p { color: #ccc; max-width: 500px; margin: 1rem auto 2rem; }
+    .cta-shield .btn { border-color: var(--accent); color: var(--accent); }
+    .cta-shield .btn-primary { background: var(--accent); color: #1a1a1a; border-color: var(--accent); }
+
+    
+    .contact-details {
+      background: #fafafa;
+      border-top: 4px solid var(--primary);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    @media (min-width: 640px) { .contact-grid { grid-template-columns: 1fr 1fr; } }
+    .contact-info p { margin-bottom: 0.5rem; }
+    .contact-info a { font-weight: 500; }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #bbb;
+      border-radius: 4px;
+      font-family: var(--body-font);
+      margin-bottom: 0.8rem;
+      background: white;
+    }
+    .contact-form button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-family: var(--heading-font);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+    }
+    .contact-form button:hover { background: #b71c1c; }
+
+    
+    .gallery-strip {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+      margin: 2rem 0;
+    }
+    @media (min-width: 640px) { .gallery-strip { grid-template-columns: repeat(4, 1fr); } }
+    .gallery-strip img {
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      border-radius: 2px;
+      filter: saturate(0.9) contrast(1.05);
+      transition: 0.2s;
+    }
+    .gallery-strip img:hover { filter: saturate(1) contrast(1.1); transform: scale(1.02); }
+
+    
+    .next-steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .step {
+      background: white;
+      padding: 1.5rem 1.2rem;
+      flex: 1 1 160px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      border-top: 4px solid var(--secondary);
+      text-align: center;
+    }
+    .step .num { font-family: var(--heading-font); font-size: 2rem; color: var(--primary); }
+    .step p { font-size: 0.9rem; }
+
+    
+    .site-footer {
+      background: #1a1a1a;
+      color: #aaa;
+      padding: 2rem 1.25rem;
+      font-size: 0.85rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      border-top: 2px solid var(--secondary);
+    }
+    .site-footer a { color: var(--accent); }
+    .site-footer .attribution { font-size: 0.75rem; opacity: 0.7; }
+
+    
+    .text-center { text-align: center; }
+    .mt-2 { margin-top: 2rem; }
+    .mb-1 { margin-bottom: 1rem; }
+    .img-shadow { box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+
+    
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&amp;family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<div class="org-name"><span>⛑</span> Brantford Professional Fire Fighters Community Support Fund</div>
+<div style="color:var(--accent); font-size:0.8rem;">Brantford, ON</div>
+</header>
+<div class="proof-strip">
+<span class="city-badge">📍 Brantford &amp; area</span>
+<span>Nonprofit community fund</span>
+<a href="https://www.brantford.ca/en/brantford-fire-services.aspx" rel="noopener" target="_blank">🔍 Check source record</a>
+</div>
+<section class="hero" id="summary">
+<div class="hero-inner">
+<div class="hero-left">
+<div class="shield-bg"></div>
+<div class="shield-overlay"></div>
+<div class="shield-symbol">
+<svg viewbox="0 0 100 100"><path d="M50 10 L90 30 L90 60 Q90 80 50 95 Q10 80 10 60 L10 30 Z" fill="none" stroke="#FF8F00" stroke-width="2"></path><path d="M50 20 L78 35 L78 58 Q78 72 50 84 Q22 72 22 58 L22 35 Z" fill="none" opacity="0.6" stroke="#FFD54F" stroke-width="1.5"></path></svg>
+</div>
+</div>
+<div class="hero-right">
+<h1>Brantford Professional Fire Fighters Community Support Fund</h1>
+<div class="sub">Supporting our neighbours through programs, volunteerism, and community partnerships.</div>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#summary">Read the summary</a>
+<a class="btn btn-outline" href="https://www.brantford.ca/en/brantford-fire-services.aspx" rel="noopener" target="_blank">Check source record</a>
+</div>
+</div>
+</div>
+</section>
+<div class="container">
+<div class="gallery-strip">
+<img alt="community event fire truck" height="800" loading="lazy" src="https://images.pexels.com/photos/31998781/pexels-photo-31998781.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<img alt="firefighters demonstration" height="800" loading="lazy" src="https://images.pexels.com/photos/31898217/pexels-photo-31898217.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<img alt="fire station brantford" height="800" loading="lazy" src="https://images.pexels.com/photos/9592380/pexels-photo-9592380.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+<img alt="community unity hands" height="800" loading="lazy" src="https://images.pexels.com/photos/461049/pexels-photo-461049.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+</div>
+</div>
+<section class="container" id="about">
+<h2 class="section-title">Field notes</h2>
+<div class="about-grid">
+<div class="about-image">
+<img alt="firefighter training drill public" height="800" loading="lazy" src="https://images.pexels.com/photos/31898215/pexels-photo-31898215.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+</div>
+<div class="about-text">
+<p>The Brantford Professional Fire Fighters Community Support Fund is a nonprofit organization based in Brantford, ON. We work to strengthen our community through targeted support programs, volunteer engagement, and partnerships with local services. Our mission is rooted in the firefighter ethos of service and readiness.</p>
+<p style="background:var(--muted);">📍 60 CLARENCE ST, BRANTFORD, ON  |  Nonprofit community fund</p>
+</div>
+</div>
+</section>
+<section class="container" id="programs">
+<h2 class="section-title">Support paths</h2>
+<div class="programs-stagger">
+<div class="program-card reveal">
+<h3>Community Programs</h3>
+<p>Funds and initiatives that support local families and individuals in need.</p>
+</div>
+<div class="program-card reveal">
+<h3>Volunteer Opportunities</h3>
+<p>Ways for community members to contribute time and skills alongside firefighters.</p>
+</div>
+<div class="program-card reveal">
+<h3>Donation Support</h3>
+<p>Financial contributions that directly fund community aid and equipment.</p>
+</div>
+<div class="program-card reveal">
+<h3>Contact &amp; Information</h3>
+<p>Reach out to learn more about the fund and how to get involved.</p>
+</div>
+</div>
+</section>
+<section id="why">
+<h2 class="section-title container">Why this fund</h2>
+<div class="why-scroll">
+<div class="why-item"><div class="icon">🏠</div><h4>Rooted in Brantford</h4><p>We know our community’s needs firsthand.</p></div>
+<div class="why-item"><div class="icon">🔥</div><h4>Firefighter-led</h4><p>Discipline and dedication in every effort.</p></div>
+<div class="why-item"><div class="icon">🔍</div><h4>Transparent operations</h4><p>All funds directed to community support.</p></div>
+<div class="why-item"><div class="icon">🤝</div><h4>Collaborative approach</h4><p>Partnerships with local organizations to maximize impact.</p></div>
+</div>
+</section>
+<section class="map-section">
+<iframe loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-80.3%2C43.1%2C-80.1%2C43.2&amp;layer=mapnik&amp;marker=43.139%2C-80.264" title="Brantford area map"></iframe>
+<div class="map-overlay"><strong>📍 Serving Brantford and surrounding areas</strong> in Ontario, Canada.</div>
+</section>
+<section class="container">
+<h2 class="section-title">How to connect</h2>
+<div class="next-steps">
+<div class="step"><div class="num">1</div><p>Use the contact section below</p></div>
+<div class="step"><div class="num">2</div><p>Tell us about programs / donations / volunteering</p></div>
+<div class="step"><div class="num">3</div><p>We confirm the best next step</p></div>
+</div>
+</section>
+<section class="cta-shield">
+<h2>Standing with our community</h2>
+<p>One call at a time. Reach out to learn more or get involved.</p>
+<div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+<a class="btn btn-primary" href="#contact">Contact us</a>
+<a class="btn btn-outline" href="https://www.brantford.ca/en/brantford-fire-services.aspx" rel="noopener" target="_blank">Source record</a>
+</div>
+</section>
+<section class="contact-details" id="contact">
+<div class="container">
+<h2 class="section-title">Contact &amp; details</h2>
+<div class="contact-grid">
+<div class="contact-info">
+<p><strong>Brantford Professional Fire Fighters Community Support Fund</strong></p>
+<p>60 CLARENCE ST, BRANTFORD, ON</p>
+<p>Phone: <a href="tel:+15197524346">(519) 752-4346</a></p>
+<p>Email: <a href="mailto:fire@brantford.ca">fire@brantford.ca</a></p>
+<p style="margin-top:1rem;"><a href="https://www.brantford.ca/en/brantford-fire-services.aspx" rel="noopener" target="_blank">🔗 Brantford Fire Services – source page</a></p>
+<div style="margin-top:1.5rem; display:flex; gap:0.8rem;">
+<a aria-label="source" href="https://www.brantford.ca/en/brantford-fire-services.aspx" rel="noopener" target="_blank">🌐</a>
+</div>
+</div>
+<div class="contact-form">
+<form action="mailto:fire@brantford.ca" enctype="text/plain" method="post">
+<input name="name" placeholder="Your name" required="" type="text"/>
+<input name="email" placeholder="Your email" required="" type="email"/>
+<textarea name="message" placeholder="Tell us about your interest: programs, donations, volunteering..." required="" rows="4"></textarea>
+<button type="submit">Send message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="site-footer">
+<div>© <span id="year"></span> Brantford Professional Fire Fighters Community Support Fund</div>
+<div class="attribution">
+    Photos: Francesco Sommacal, Helena Jankovičová Kováčová, Julia M Cameron, Nataliya Vaitkevich, Nathan Stein, Bombeiros MT, Vladimir Srajber, Erik Mclean, Pixabay (Pexels)
+  </div>
+<div><a href="https://www.brantford.ca/en/brantford-fire-services.aspx" rel="noopener" target="_blank">Source record</a></div>
+</footer>
+<script>
+  (function() {
+    // dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+    reveals.forEach(el => observer.observe(el));
+
+    // also observe program cards that are not .reveal? add reveal class
+    document.querySelectorAll('.program-card').forEach(card => card.classList.add('reveal'));
+    // re-observe
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  })();
+</script>
+</body>
+</html>
